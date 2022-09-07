@@ -1,0 +1,17 @@
+#botao {
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 5px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
