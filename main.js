@@ -1,15 +1,19 @@
-function validar () {
-    var numb1 = document.getElementById("numb1");
-    var numb2 = document.getElementById("numb2");
-    if (numb1.value > numb2.value) {
-        alert("Este formulário é inválido")
-    }
-    else if (numb1.value,numb2.value == "") {
-        alert("Número não informado")
-    }
-    else {
-        alert("Formulário está correto")
-    }
-    document.getElementById("myForm").submit();
-}
+const form = document.getElementById('form-agenda');
+let linhas = '';
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const inputNomeContato = document.getElementById('nome-contato');
+    const inputNumeroContato = document.getElementById('numero-contato');
+  
+    let linha = "<tr>";
+    linha += `<td>${inputNomeContato.value}</td>`;
+    linha += `<td>${inputNumeroContato.value}</td>`;
+
+    linhas += linha;
+
+    const corpoAgenda = document.querySelector('tbody');
+    corpoAgenda.innerHTML = linhas;
+})
 

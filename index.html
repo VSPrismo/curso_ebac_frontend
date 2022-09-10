@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Exercício</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Exercício HTML/JS EBAC</h1>
-
-    <form action="" id="myForm">
-        <p>Campo A</p><input type="number" id="numb1"> <br><br>
-        <p>Campo B</p><input type="number" id="numb2"> <br><br>
-        <button type="button" id="Botao" onclick="validar()">Enviar</button>
-
+  <div class="container">
+    <h1>Agenda de Contatos</h1>
+    <form id="form-agenda">
+       <input type="text" id="nome-contato" required placeholder="Nome"/>
+       <input type="tel" id="numero-contato" required="required" placeholder="(00) 00000-0000" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"/>
+       <button type="submit">Adicionar</button>
     </form>
-    <script src="main.js"></script>
+    <table cellspacing="0">
+       <thead>
+           <tr>
+               <th>
+                   Nome do Contato
+               </th>
+               <th>
+                   Número telefônico
+               </th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>----------</td>
+               <td>----------</td>
+           </tr>
+       </tbody>
+    </table>   
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>
