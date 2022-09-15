@@ -6,77 +6,55 @@
     box-sizing: border-box;
 }
 
-h1{
+#form-tarefa h1 {
     font-family: 'Roboto', sans-serif;
-    padding: 20px;
+    padding: 10px;
+    margin-left: 100px;
 }
 
-body {
-    background-color: #E7E7E7;
-    padding-top: 100px;
+#form-tarefa {
+    font-family: 'Roboto', sans-serif;
+    display: absolute;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding: 11px;
+    width: 500px;
+    background-color: darkgray;
 }
 
-header {
-    display: flex;
+#form-tarefa button {
+    font-family: 'Roboto', sans-serif;
+    width: 80px;
+    max-width: 100%;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 5px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-tarefa ul {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    display: relative;
+    align-items: center;
+    margin-left: 100px;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+#input-tarefa {
+    margin-left: 100px;
+    display: relative;
     align-items: center;
 }
 
-header h1 {
-    font-size: 40px;
-    font-weight: bold;
-
-}
-
-.container {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-form {
-    display: flex;
-    max-width: 640px;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 56px;
-}
-
-form input {
-    font-size: 24px;
-    background-color: #fff;
-    border: none;
-    border-bottom: 2px solid #000;
-    padding: 8px;
-
-}
-
-form button {
-    background-color: indianred;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
+.riscarTexto {
+    text-decoration: line-through;
     cursor: pointer;
-    padding: 8px;
-
-}
-
-table {
-    width: 100%;
-}
-
-table th {
-    border-bottom: 2px solid #000;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-table td {
-    padding: 8px 0;
-    text-align: center;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(0,0,0, 0.5) ;
-    font-family: 'Roboto', sans-serif;
 }
