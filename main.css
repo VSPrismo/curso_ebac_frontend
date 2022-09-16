@@ -1,60 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
 }
 
-#form-tarefa h1 {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    margin-left: 100px;
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px;
 }
 
-#form-tarefa {
-    font-family: 'Roboto', sans-serif;
-    display: absolute;
-    align-items: center;
-    margin-left: 50px;
-    margin-top: 25px;
-    padding: 11px;
-    width: 500px;
-    background-color: darkgray;
+
+.form-campo {
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
-#form-tarefa button {
-    font-family: 'Roboto', sans-serif;
-    width: 80px;
-    max-width: 100%;
-    align-items: center;
-    height: 20px;
-    margin-bottom: 5px;
-    background-color: green;
-    color: #fff;
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 8px 0;
     border: none;
-    border-radius: 5px;
+    background-color: rgb(7, 7, 88);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
     cursor: pointer;
-}
-
-#form-tarefa ul {
-    font-family: 'Roboto', sans-serif;
-    padding: 15px;
-    display: relative;
-    align-items: center;
-    margin-left: 100px;
-    list-style: none;
-    cursor: pointer;
-    
-}
-
-#input-tarefa {
-    margin-left: 100px;
-    display: relative;
-    align-items: center;
-}
-
-.riscarTexto {
-    text-decoration: line-through;
-    cursor: pointer;
+    border-radius: 6px;
 }
